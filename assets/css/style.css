@@ -1,0 +1,231 @@
+/* common code start */
+:root {
+     --primary-color: #333333;
+     --secondary-color: #ffffff;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     box-sizing: border-box;
+     --fs-1: 16px;
+     --fs-2: 18px;
+     --fs-3: 20px;
+     --fs-4: 22px;
+     --fs-5: 24px;
+     --fs-6: 26px;
+     --hs-1: 65px;
+     --hs-2: 45px;
+}
+
+@font-face {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     src: url(../fonts/Segoe_UI.ttf);
+}
+
+body {
+     margin: 0px;
+     padding: 0px;
+}
+
+.container-fluid {
+     width: 100%;
+}
+
+.container {
+     width: 80%;
+     margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+     margin: 0px;
+     padding: 0px;
+}
+
+a {
+     text-decoration: none;
+}
+
+a,
+span {
+     display: inline-block;
+}
+
+li {
+     list-style: none;
+}
+
+.w-100 {
+     width: 100%;
+}
+
+.w-75 {
+     width: 75%;
+}
+
+.w-50 {
+     width: 50%;
+}
+
+.w-25 {
+     width: 25%;
+}
+
+.d-flex {
+     display: flex;
+}
+
+.justify-content-start {
+     justify-content: flex-start;
+}
+
+.justify-content-center {
+     justify-content: center;
+}
+
+.justify-content-end {
+     justify-content: flex-end;
+}
+
+.justify-content-between {
+     justify-content: space-between;
+}
+
+.align-item-center {
+     align-items: center;
+}
+
+.my-30 {
+     margin: 30px 0px;
+}
+
+.py-160 {
+     padding: 160px 0px;
+}
+
+/* common code end */
+
+/* header section start */
+header {
+     background: linear-gradient(rgba(0, 0, 0, .3), rgba(91, 127, 158, 0.3)), url(../img/banner.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom: 140px;
+}
+
+/* header section END */
+/* NAV section start */
+.navbar .navbar-brand .img-fluid {
+     max-height: 60px;
+}
+
+.navbar .navbar-toggler {
+     color: var(--secondary-color);
+     border: var(--bs-border-width) solid var(--secondary-color);
+}
+
+.navbar .nav-link {
+     color: var(--secondary-color);
+     text-transform: uppercase;
+     font-weight: 600;
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+     color: var(--secondary-color);
+}
+
+/* NAV section END */
+.heading {
+     color: var(--secondary-color);
+     font-size: 65px;
+     text-align: center;
+     padding: 140px 0px 160px 0px;
+     line-height: 90%;
+}
+
+.heading p {
+     padding-top: 40px;
+     font-size: 22px;
+     line-height: 130%;
+}
+
+.heading a {
+     margin-top: 60px;
+     font-size: 13px;
+}
+.content-area h3{
+     margin: 10px 0px;
+}
+.content-area p{
+     margin-bottom: 30px;
+}
+/* portfolio start */
+.tab-content{
+     margin-top: 90px;
+     margin-bottom: 90px;
+}
+.portfolio-content{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-content-overlay{
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,0,0,.5);
+    transition: .5s all;
+    cursor: pointer;
+}
+.portfolio-content:hover .portfolio-content-overlay{
+    top: 0px;
+}
+.portfolio-content-overlay h3,h4{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    transform: translateY(90px);
+    font-weight: 600;
+    line-height: 60px;
+}
+.portfolio .nav-pills .nav-link {
+    background: var(--black-color);
+    border: 0;
+    border-radius: 0px;
+    color: var(--white-color);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 16px;
+    transition: .5s all;
+}
+.portfolio .nav-pills .nav-link.active, 
+.portfolio .nav-pills .nav-link,
+.portfolio .nav-pills .nav-link:hover {
+    color: var(--secondary-color);
+}
+.portfolio-content h6{
+     color: red;
+     padding: 20px 0px;
+}
+.portfolio-content p{
+margin-bottom: 80px;  
+}
+/* portfolio end */
+/*footer banner*/
+.footer-banner h3{
+     color: var(--secondary-color);
+     background-color: #470831;
+     background-size: cover;
+	 padding:10px 10px;
+	 font-size:25px;
+}
+.footer-content p{
+	padding-top:100px;
+	text-align:center;
+    font-size:20px;
+}
